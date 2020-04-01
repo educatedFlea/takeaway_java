@@ -1,13 +1,11 @@
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
 
 public class MenuTest {
     @Test
     public void itStoresListOfDishes() {
-        Menu menu = new Menu();
+        Menu menu = new Menu("Carbonara", 12);
         menu.list.put("Pasta", 5);
         menu.list.put("Rice",8);
         assertEquals(menu.list.get("Pasta"), 5);
